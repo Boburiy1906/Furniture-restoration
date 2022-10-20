@@ -1,0 +1,103 @@
+:root{
+
+}
+
+/* FONTS */
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/open-sans-v34-latin-300.woff2') format('woff2'),
+       url('../fonts/open-sans-v34-latin-300.woff') format('woff');
+       font-display: swap;
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'),
+       url('../fonts/open-sans-v34-latin-regular.woff') format('woff');
+       font-display: swap;
+}
+
+/* tenor-sans-regular - latin */
+@font-face {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/tenor-sans-v17-latin-regular.woff2') format('woff2'),
+       url('../fonts/tenor-sans-v17-latin-regular.woff') format('woff');
+}
+
+
+/* GLOBAL styles */
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+html{
+height: 100%;
+scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* PLASEHOLDER-STYLES */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+::-ms-input-placeholder,
+::-moz-placeholder
+{
+  color: rgba(52, 49, 61, 0.5);
+  opacity: 1;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container{
+width: 100%;
+max-width: 1300px;
+padding-left: 70px;
+padding-right: 70px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {}
